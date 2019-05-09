@@ -5,12 +5,11 @@ const addUser = require('./controllers/addUser')
 const listPost = require('./controllers/listPost')
 const listUser = require('./controllers/listUser')
 
-router.post('/user', addPost.store)
-/*
-router.get('/user')
+router.post('/post', addPost.store)
+router.get('/post', listPost.list)
 
-router.post('/post')
-router.get('/post')
-*/
+router.get('/user', listUser.list)
+router.post('/user', addUser.store)
+
 
 module.exports = router

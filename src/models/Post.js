@@ -7,12 +7,12 @@ const PostSchema = new mongoose.Schema(
         type: String,
         required: true
     },
-    Date:
+    date:
     {
         type: Date,
         default: Date.now()
     },
-    User:
+    user_fk:
     {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'

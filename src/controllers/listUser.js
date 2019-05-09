@@ -2,7 +2,7 @@ const User = require('../models/User')
 
 class Users
 {
-    async store(req,res)
+    async list(req,res)
     {
         try
         {
@@ -16,4 +16,4 @@ class Users
     }
 }
 
-module.exports = new User
+module.exports = new Users

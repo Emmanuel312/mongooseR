@@ -16,4 +16,4 @@ class Users
     }
 }
 
-module.exports = new User
+module.exports = new Users 
